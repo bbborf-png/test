@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Hill Adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <p class="subtitle">A little adventure up the hill</p>
+        <h1>Will you climb with me?</h1>
+        <p class="instructions">
+          Use <strong>←</strong> and <strong>→</strong> (or the buttons) to move. Press
+          <strong>E</strong> when you find a heart gift.
+        </p>
+      </header>
+
+      <main class="scene" aria-live="polite">
+        <div class="hill" aria-hidden="true"></div>
+        <div id="character" class="character" role="img" aria-label="A tiny adventurer"></div>
+
+        <button class="gift" data-gift="1" style="left: 16%" aria-label="Heart gift one">
+          <span>❤</span>
+        </button>
+        <button class="gift" data-gift="2" style="left: 42%" aria-label="Heart gift two">
+          <span>❤</span>
+        </button>
+        <button class="gift" data-gift="3" style="left: 68%" aria-label="Heart gift three">
+          <span>❤</span>
+        </button>
+        <button class="gift" data-gift="4" style="left: 88%" aria-label="Heart gift four">
+          <span>❤</span>
+        </button>
+
+        <div class="controls" aria-hidden="false">
+          <button id="leftBtn" type="button">←</button>
+          <button id="actionBtn" type="button">E</button>
+          <button id="rightBtn" type="button">→</button>
+        </div>
+      </main>
+    </div>
+
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <button class="close" type="button" aria-label="Close">×</button>
+        <div class="modal-photo" id="modalPhoto"></div>
+        <h2 id="modalTitle">A sweet moment</h2>
+        <p id="modalText">Thanks for finding this memory.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
