@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3ff" />
+      <stop offset="100%" stop-color="#f5c6ff" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#grad)" />
+  <rect x="80" y="80" width="220" height="220" rx="32" fill="#fff" opacity="0.7" />
+  <rect x="500" y="200" width="200" height="200" rx="32" fill="#fff" opacity="0.5" />
+  <text x="80" y="360" font-family="Segoe UI, sans-serif" font-size="42" fill="#8a35a6">Late Night Talks</text>
+  <text x="80" y="405" font-family="Segoe UI, sans-serif" font-size="22" fill="#53214f">Swap in your cozy snapshot</text>
+  <text x="700" y="120" font-family="Segoe UI, sans-serif" font-size="26" fill="#b552c9">✨</text>
+</svg>
